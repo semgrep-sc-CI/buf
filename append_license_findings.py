@@ -95,6 +95,7 @@ if __name__ == "__main__":
     text_block = sys.stdin.read()
     print("text_block === ")
     print(text_block)
+    print("=== text_block ")
 
     
     try:
