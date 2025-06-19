@@ -84,6 +84,14 @@ def append_to_json_file(data, file_path):
     with open(file_path, 'w') as json_file:
         json.dump(new_data, json_file, indent=4)
 
+    # Read the file back and print its contents
+    print("== report-ssc.json === ")
+    with open(file_path, 'r') as json_file:
+        content = json_file.read()
+        print(content)
+    print("== report-ssc.json === ")
+
+
 if __name__ == "__main__":
     if len(sys.argv) != 2:
         print("Usage: python append_license_findings.py <path_to_existing_json_file>")
