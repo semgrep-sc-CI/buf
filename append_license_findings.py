@@ -93,6 +93,9 @@ if __name__ == "__main__":
     
     # Read the text block from standard input
     text_block = sys.stdin.read()
+    print("text_block === ")
+    print(text_block)
+
     
     try:
         # Parse the text block if the preceding line is correct
